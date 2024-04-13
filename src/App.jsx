@@ -5,11 +5,12 @@ import Men from './Components/Men'
 import Women from './Components/Women'
 import Beauty from './Components/Beauty'
 import Fashion from './Components/Fashion'
+import Navbar from './Components/Navbar'
 
 const App = () => {
   return (
     <div className=''>
-      {/* <Navbar Navbarlinks={Navbarlinks} /> */}
+      <Navbar Navbarlinks={Navbarlinks} />
       
       <Routes>
         <Route path="/" element={<HomeLiving />} />

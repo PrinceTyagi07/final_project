@@ -29,12 +29,14 @@ const Navbar = ({ Navbarlinks }) => {
                     <div className='logo font-bold text-2xl md:text-xl tracking-wider text-blue-500  flex gap-4 '>
                         <button onClick={changehandler} className="md:hidden text-xl ">
                             {
-                                change === true ? <IoClose/> : <GiHamburgerMenu />
+                                change === true ? <IoClose /> : <GiHamburgerMenu />
                             }
 
                         </button>
-
-                        Shopsy
+                        <div>
+                            <img src="../../public/im.png" alt="" className="" />
+                            Shopsy
+                        </div>
                     </div>
 
                     {/*  pages navigatior */}
