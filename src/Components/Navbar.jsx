@@ -6,9 +6,10 @@ import { BsHandbag } from "react-icons/bs";
 import { IoIosSearch } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from 'react-router-dom';
+import { IoClose } from "react-icons/io5";
 // import { CgLayoutGrid } from 'react-icons/cg';
 
-const Navbar = ({Navbarlinks}) => {
+const Navbar = ({ Navbarlinks }) => {
     // const Navbarlinks = props.Navbarlinks;
     console.log(Navbarlinks)
     const [change, setChange] = useState(false);
@@ -28,24 +29,21 @@ const Navbar = ({Navbarlinks}) => {
                     <div className='logo font-bold text-2xl md:text-xl tracking-wider text-blue-500  flex gap-4 '>
                         <button onClick={changehandler} className="md:hidden text-xl ">
                             {
-                                change === true ? `X` : <GiHamburgerMenu />
+                                change === true ? <IoClose/> : <GiHamburgerMenu />
                             }
 
                         </button>
+
                         Shopsy
                     </div>
 
+                    {/*  pages navigatior */}
 
-
-                    <div className={` md:flex-row capitalize gap-8  py-10  absolute md:static md:bg-white transition-all  duration-700 ease-in top-24 flex flex-col   ${change === true ? "   flex flex-col top-24 px-10 left-1  " : " left-[-250px]"}`}>
-                        {Navbarlinks.map((link, index) => (
-                            <li
-                                key={link.id}
-                                
-                                className="p-2 text-2xl hover:border-2  hover:ring-richblue-1   rounded-md 
-                                                transition-all duration-500 "
-                            >
-                                <Link to={link?.path}>
+                    <div className={` md:flex-row capitalize gap-8  py-10  absolute md:static md:bg-white transition-all  duration-700 ease-in top-24 flex flex-col   ${change === true ? "flex flex-col top-24 px-10 left-1" : "left-[-250px]"}`}>
+                        {Navbarlinks.map((link) => (
+                            <li key={link.id} className="p-2 text-2xl hover:border-2  hover:ring-richblue-1   rounded-md 
+                             transition-all duration-500 " >
+                                <Link to={link.path}>
                                     <p>{link.title}</p>
                                 </Link>
                             </li>
