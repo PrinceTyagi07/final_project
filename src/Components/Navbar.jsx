@@ -44,7 +44,7 @@ const Navbar = ({ Navbarlinks }) => {
 
                     {/*  pages navigatior */}
 
-                    <div className={` md:flex-row capitalize gap-8  py-8  absolute md:static md:bg-white transition-all  duration-700 ease-in top-6 flex flex-col   ${change === true ? "flex flex-col top-8 px-10 left-[-20px]" : "left-[-250px]"} list-none`}>
+                    <div className={` md:flex-row capitalize gap-8  py-8  absolute md:static md:bg-white transition-all  duration-700 ease-in top-6 flex flex-col   ${change === true ? "flex flex-col top-10 bg-white px-10 left-[-20px]" : "left-[-250px]"} list-none`}>
                         {Navbarlinks.map((link) => (
                             <li key={link.id} className="px- text-xl font-semibold " >
                                 <Link to={link?.path}>
