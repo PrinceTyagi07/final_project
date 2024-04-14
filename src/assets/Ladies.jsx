@@ -1,4 +1,4 @@
-const priya =[
+export const priya =[
    {
         id: 1,
         image: "https://images.unsplash.com/photo-1484327973588-c31f829103fe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmV3JTIwZmFzaGlvbiUyMHdvbWVuJTIwY2xvdGhlcyUyMHdpdGglMjBpbmRpdmlkdWFsfGVufDB8fDB8fHww ",

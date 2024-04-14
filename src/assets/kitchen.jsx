@@ -1,4 +1,4 @@
-const kitchen =[
+export const kitchen =[
    {
         id: 1,
         image: "https://plus.unsplash.com/premium_photo-1674911578934-37cdc535a0a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2l0Y2hlbiUyMHByb2R1Y3RzfGVufDB8fDB8fHww", 

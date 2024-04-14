@@ -1,4 +1,4 @@
-const men =[
+export const men =[
    {
         id: 1,
         image: "https://images.unsplash.com/photo-1624378440847-4a64ee1a889d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVuJTIwY2xvdGhzfGVufDB8fDB8fHww", 

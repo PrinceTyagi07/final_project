@@ -1,4 +1,4 @@
-const home =[
+export const home =[
    {
         id: 1,
         image: "https://plus.unsplash.com/premium_photo-1683910665313-877b5dd42d4a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D", 
