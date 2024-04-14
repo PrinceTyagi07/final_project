@@ -13,7 +13,7 @@ import Styleformen from './Styleformen';
 const HomeLiving = () => {
     const SlideRef = useRef;
   return (
-    <div className='relative'>
+    <div className='relative  min-h-fit'>
      <Swiper 
        pagination={false}
         modules={[FreeMode, Pagination, Navigation, Autoplay]}
@@ -33,15 +33,15 @@ const HomeLiving = () => {
       <SwiperSlide><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/24/BAU/feb/PC_hero_1_2x_1._CB582889946_.jpg" alt="" /></SwiperSlide>
       ...
     </Swiper>
-    <div className=" flex justify-between gap-y-10 px-[2vw] flex-wrap -mt-[33vh] absolute z-[99]">
+    <div className=" flex justify-between gap-y-10 px-[2vw] flex-wrap -mt-[33vh] absolute z-[99] ">
+        <Appliances/>
+        {/* <Styleformen/>
         <Appliances/>
         <Styleformen/>
         <Appliances/>
         <Styleformen/>
         <Appliances/>
-        <Styleformen/>
-        <Appliances/>
-        <Styleformen/>
+        <Styleformen/> */}
     </div>
     </div>
   )

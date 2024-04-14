@@ -11,7 +11,7 @@ import { Navbarlinks } from './Navlinks'
 import { Route,Routes } from 'react-router-dom'
 const App = () => {
   return (
-    <div className='bg-gray-100'>
+    <div className='bg-gray-400 '>
       <Navbar Navbarlinks={Navbarlinks} />
       
       <Routes>
