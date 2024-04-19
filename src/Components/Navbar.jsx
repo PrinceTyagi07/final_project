@@ -7,6 +7,7 @@ import { IoIosSearch } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from 'react-router-dom';
 import { IoClose } from "react-icons/io5";
+import im from "../../public/im.png"
 // import { CgLayoutGrid } from 'react-icons/cg';
 
 const Navbar = ({ Navbarlinks }) => {
@@ -36,7 +37,7 @@ const Navbar = ({ Navbarlinks }) => {
                         </button>
                         <div className=' '>
                         <NavLink to={'/'} className='flex flex-col space-y-2 items-center'>
-                            <img src="../../public/im.png" alt="" className="md:w-[40px]  md:h-[40px] w-[50px]" />
+                            <img src={im} alt="" className="md:w-[40px]  md:h-[40px] w-[50px]" />
                             <h1 className='gradient-text hidden md:block tracking-tighter font-serif '>SHOPSEY</h1>
                             </NavLink>
                         </div>
@@ -58,7 +59,7 @@ const Navbar = ({ Navbarlinks }) => {
 
                     <div className='hidden md:block w-1/3  '>
                         <input
-                            class=" h-12 font-semibold min-w-full px-4 text-orange-500 py-2 border-2"
+                            class=" h-12 border-zinc-400 rounded-sm font-semibold min-w-full px-4 text-orange-500 py-2 border-2"
                             autocomplete="off"
                             placeholder="Search Here"
                             name="text"
