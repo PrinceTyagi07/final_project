@@ -3,7 +3,7 @@ import { Applince } from '../assets/Applince'
 import { FaAngleRight } from "react-icons/fa6";
 const Appliances = () => {
   return (
- <div className="bg-white md:w-[20vw]  w-[48%] h-fit md:h-[49vh] pb-8 shadow-gray-400  shadow-xl mb-10 ">
+ <div className="bg-white md:w-[20vw]  w-[45%] h-fit md:h-[49vh] pb-8 shadow-gray-400  shadow-xl mb-10 ">
  <h2 className='md:text-xl font-semibold mx-3'>Appliences for your home | up to 55% off</h2>
  <div className="flex flex-wrap gap-4 justify-center ">
   {
