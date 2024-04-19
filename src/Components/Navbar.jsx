@@ -38,7 +38,7 @@ const Navbar = ({ Navbarlinks }) => {
                         <div className=' '>
                         <NavLink to={'/'} className='flex flex-col space-y-2 items-center'>
                             <img src={im} alt="" className="md:w-[40px]  md:h-[40px] w-[50px]" />
-                            <h1 className='gradient-text hidden md:block tracking-tighter font-serif '>SHOPSEY</h1>
+                            <h1 className='gradient-text md:block tracking-tighter font-serif '>SHOPSEY</h1>
                             </NavLink>
                         </div>
                     </div>
