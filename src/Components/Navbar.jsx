@@ -86,10 +86,12 @@ const Navbar = ({ Navbarlinks }) => {
                         </NavLink>
                         </div>
                         <div className="">
+                        <NavLink to='/cart'>
                             <button className="flex flex-col  items-center justify-center text-center">
                                 <BsHandbag className='text-orange-500' />
                             <p className="font-semibold gradient-text text-[1rem] mt-2 hidden md:block">bag</p>
                             </button>
+                            </NavLink>
                         </div>
                     </div>
 
