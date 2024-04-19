@@ -9,6 +9,8 @@ import { Autoplay, FreeMode, Navigation, Pagination } from "swiper/modules";
 import Appliances from './Appliances';
 import Styleformen from './Styleformen';
 import StyleHome from './StyleHome';
+import Homeimprovement from './Homeimprovement';
+import ElectricGadget from './ElectricGadget';
 
 
 const HomeLiving = () => {
@@ -34,10 +36,15 @@ const HomeLiving = () => {
         <SwiperSlide><img className='min-w-full' src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/24/BAU/feb/PC_hero_1_2x_1._CB582889946_.jpg" alt="" /></SwiperSlide>
         ...
       </Swiper>
-      <div className=" flex md:justify-between md:gap-10 gap-4 px-[2vw] flex-wrap md:-mt-[33vh] -mt-[10vh] absolute z-[99] ">
+      <div className=" flex md:justify-between md:gap-16 gap-4 px-[2vw] flex-wrap md:-mt-[33vh] -mt-[10vh] absolute z-[99] ">
         <Appliances />
         <Styleformen/>
         <StyleHome/>
+        <Homeimprovement/>
+        <ElectricGadget/>
+        <StyleHome/>
+        <Appliances />
+        <Styleformen/>
       </div>
     </div>
   )

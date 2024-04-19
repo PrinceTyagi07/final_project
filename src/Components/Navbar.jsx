@@ -5,7 +5,7 @@ import { FaRegHeart } from "react-icons/fa6";
 import { BsHandbag } from "react-icons/bs";
 import { IoIosSearch } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { IoClose } from "react-icons/io5";
 // import { CgLayoutGrid } from 'react-icons/cg';
 
@@ -24,32 +24,32 @@ const Navbar = ({ Navbarlinks }) => {
 
 
 
-                <div className={`fixed z-[999] capitalize  text-[#23B6AA]  w-full bg-white flex justify-between items-center px-8 
+                <div className={`fixed z-[999] capitalize    w-full bg-white flex justify-between items-center px-8 
              ${change === true ? "" : ""}  py-1 shadow-md shadow-gray-300`}>
 
                     <div className='logo font-bold text-2xl md:text-xl tracking-wider text-[#23B6AA]  flex gap-2 '>
-                        <button onClick={changehandler} className="md:hidden text-xl ">
+                        <button onClick={changehandler} className="md:hidden text-xl text-orange-500 ">
                             {
-                                change === true ? <IoClose className='text-4xl' /> : <GiHamburgerMenu />
+                                change === true ? <IoClose className='text-3xl' /> : <GiHamburgerMenu />
                             }
 
                         </button>
                         <div className=' '>
-                        <Link to={'/'} className='flex flex-col space-y-2 items-center'>
-                            <img src="../../public/im.png" alt="" className=" hidden md:w-[30px] md:h-[30px] md:block " />
-                            <img src="../../src/assets/shopsy.png" alt="" className="md:w-[50px] md:h-[30px] w-[80px]" />
-                            </Link>
+                        <NavLink to={'/'} className='flex flex-col space-y-2 items-center'>
+                            <img src="../../src/assets/shopsy.png" alt="" className="md:w-[40px] md:h-[40px] w-[50px]" />
+                            <h1 className='gradient-text hidden md:block tracking-tighter font-serif '>SHOPSEY</h1>
+                            </NavLink>
                         </div>
                     </div>
 
                     {/*  pages navigatior */}
 
-                    <div className={` md:flex-row capitalize gap-8  py-8  absolute md:static md:bg-white transition-all  duration-700 ease-in top-6 flex flex-col   ${change === true ? "flex flex-col top-10 bg-white px-10 left-[-20px]" : "left-[-250px]"} list-none`}>
+                    <div className={` md:flex-row capitalize gap-8  py-8  absolute md:static md:bg-white transition-all  duration-700 ease-in top-6 flex flex-col   ${change === true ? "flex flex-col top-[41px] bg-white px-10 left-[-20px]" : "left-[-250px]"} list-none`}>
                         {Navbarlinks.map((link) => (
-                            <li key={link.id} className="px- text-xl font-semibold " >
-                                <Link to={link?.path}>
-                                    <p className=''>{link.title}</p>
-                                </Link>
+                            <li key={link.id} className="px-  font-semibold " >
+                                <NavLink to={link?.path}>
+                                    <p className='gradient-text btn'>{link.title}</p>
+                                </NavLink>
                             </li>
                         ))}
                     </div>
@@ -58,7 +58,7 @@ const Navbar = ({ Navbarlinks }) => {
 
                     <div className='hidden md:block w-1/3  '>
                         <input
-                            class="search h-12 font-semibold min-w-full px-4 py-2 rounded-full"
+                            class=" h-12 font-semibold min-w-full px-4 text-orange-500 py-2 border-2"
                             autocomplete="off"
                             placeholder="Search Here"
                             name="text"
@@ -70,21 +70,21 @@ const Navbar = ({ Navbarlinks }) => {
                         <div className=" ">
                             <button className='flex flex-col items-center justify-center text-center'>
 
-                                <IoPersonOutline className='hidden md:block' />
-                                <IoIosSearch className='md:hidden text-[2rem]' />
-                            <p className="font-semibold text-[1rem] mt-2 hidden md:block"> profile</p>
+                                <IoPersonOutline className='hidden md:block text-orange-500' />
+                                <IoIosSearch className='md:hidden text-[2rem]  text-orange-500' />
+                            <p className="font-semibold text-[1rem] gradient-text mt-2 hidden md:block"> profile</p>
                             </button>
                         </div>
                         <div className="">
-                            <button className="flex flex-col items-center justify-center text-center">
-                                <FaRegHeart />
-                            <p className="font-semibold text-[1rem] mt-2 hidden md:block">wishlist</p>
+                            <button className="flex flex-col  items-center justify-center text-center ">
+                                <FaRegHeart  className='text-orange-500' />
+                            <p className="font-semibold gradient-text text-[1rem] mt-2 hidden md:block">wishlist</p>
                             </button>
                         </div>
                         <div className="">
-                            <button className="flex flex-col items-center justify-center text-center">
-                                <BsHandbag />
-                            <p className="font-semibold text-[1rem] mt-2 hidden md:block">bag</p>
+                            <button className="flex flex-col  items-center justify-center text-center">
+                                <BsHandbag className='text-orange-500' />
+                            <p className="font-semibold gradient-text text-[1rem] mt-2 hidden md:block">bag</p>
                             </button>
                         </div>
                     </div>

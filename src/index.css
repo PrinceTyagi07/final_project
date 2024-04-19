@@ -15,8 +15,78 @@
         outline: none;
         font-size: 16px;
 
-        box-shadow: inset 2px 4px 6px rgb(63, 134, 133);
+        box-shadow: inset 2px 4px 6px rgb(245, 145, 63);
         
       
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background:rgb(228, 226, 226);
+}
+.gradient-text {
+    /* Apply gradient as background */
+    @apply bg-gradient-to-r from-red-500 to-yellow-500;
+    
+    /* Set transparent text color */
+    @apply text-transparent;
+  }
+  
+.btn {
+    font-size: 17px;
+    /* background: transparent; */
+    border: none;
+    /* padding: 1em 1.5em; */
+    /* color: white; */
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: rgb(255, 132, 0);
+    transition: 0.5s ease;
+  }
+  
+  .btn:hover {
+
+    transition-delay: 0.5s;
+  }
+  
+  .btn:hover::before {
+    width: 100%;
+  }
+  
+  .btn::after {
+    content: "";
+    /* position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0; */
+    width: 100%;
+    /* background-color: red; */
+    transition: 0.4s ease;
+    /* z-index: -1; */
+  }
+  
+  .btn:hover::after {
+    height: 2%;
+    transition-delay: 0.4s;
+    /* color: white; */
+  }
+  .active{
+    text-underline-position: 6px;
+  }

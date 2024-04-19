@@ -3,7 +3,7 @@ import { Menstyle } from '../assets/Menstyle'
 import { FaAngleRight } from "react-icons/fa6";
 const Styleformen = () => {
   return (
-    <div className="bg-white md:w-[20vw]  w-[48%] h-fit md:h-[47vh] pb-8 shadow-gray-400  shadow-xl mb-10 ">
+    <div className="bg-white md:w-[20vw]  w-[48%] h-fit md:h-[49vh] pb-8 shadow-gray-400  shadow-xl mb-10 ">
  <h2 className='md:text-xl font-semibold mx-3 mb-2'>Up to 60% off | Style for Men</h2>
  <div className="flex flex-wrap gap-4 justify-center ">
     {

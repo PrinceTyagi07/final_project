@@ -3,7 +3,7 @@ import { FaAngleRight } from "react-icons/fa6";
 import { styleimage } from '../assets/Stylehomeimage';
 const StyleHome = () => {
   return (
-    <div className="bg-white md:w-[20vw]  w-[48%] h-fit md:h-[47vh] pb-8 overflow-hidden shadow-gray-400  shadow-xl mb-10 ">
+    <div className="bg-white md:w-[20vw]  w-[48%] h-fit md:h-[49vh] pb-8 overflow-hidden shadow-gray-400  shadow-xl mb-10 ">
     <h2 className='md:text-xl font-semibold mx-3 my-2'>Revamp your home in style</h2>
     <div className="flex flex-wrap gap-4 justify-center ">
      {
