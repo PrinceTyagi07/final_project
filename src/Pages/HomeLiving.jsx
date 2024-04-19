@@ -13,10 +13,14 @@ import Homeimprovement from '../Components/Homeimprovement';
 import ElectricGadget from '../Components/ElectricGadget';
 
 
-const HomeLiving = () => {
+const HomeLiving = ({setChanges}) => {
+  const setchange=setChanges;
+  function changehandler() {
+    setchange(false);
+}
   const SlideRef = useRef;
   return (
-    <div className='relative  min-h-fit'>
+    <div onClick={changehandler} className='relative  min-h-fit'>
       <Swiper
         pagination={false}
         modules={[FreeMode, Pagination, Navigation, Autoplay]}

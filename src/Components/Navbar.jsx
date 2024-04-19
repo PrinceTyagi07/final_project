@@ -10,10 +10,11 @@ import { IoClose } from "react-icons/io5";
 import im from "../../public/im.png"
 // import { CgLayoutGrid } from 'react-icons/cg';
 
-const Navbar = ({ Navbarlinks }) => {
+const Navbar = ({ Navbarlinks,changes,setChanges }) => {
     // const Navbarlinks = props.Navbarlinks;
-    console.log(Navbarlinks)
-    const [change, setChange] = useState(false);
+    // console.log(Navbarlinks)
+    const change=changes;
+    const setChange=setChanges;
     function changehandler() {
         setChange(!change);
     }

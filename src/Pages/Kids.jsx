@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Kids = () => {
+const Kids = ({setChanges}) => {
+  const setchange=setChanges;
+  function changehandler() {
+    setchange(false);
+}
   return (
-    <div>Kids</div>
+    <div onClick={changehandler} className='h-screen'>Kids</div>
   )
 }
 

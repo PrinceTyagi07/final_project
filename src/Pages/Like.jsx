@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Like = () => {
+const Like = ({setChanges}) => {
+  const setchange=setChanges;
+  function changehandler() {
+    setchange(false);
+}
   return (
-    <div>Like</div>
+    <div  onClick={changehandler} className='h-screen'>Like</div>
   )
 }
 

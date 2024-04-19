@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Cart = () => {
+const Cart = ({setChanges}) => {
+    const setchange=setChanges;
+  function changehandler() {
+    setchange(false);
+}
   return (
-    <div>Cart</div>
+    <div onClick={changehandler} className='h-screen'>Cart</div>
   )
 }
 

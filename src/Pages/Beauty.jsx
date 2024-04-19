@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Beauty = () => {
+const Beauty = ({setChanges}) => {
+  const setchange=setChanges;
+  function changehandler() {
+    setchange(false);
+}
   return (
-    <div>Beauty</div>
+    <div onClick={changehandler} className='h-screen'>Beauty</div>
   )
 }
 
