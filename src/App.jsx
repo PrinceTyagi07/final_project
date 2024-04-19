@@ -9,6 +9,8 @@ import Kids from './Pages/Kids'
 import Navbar from './Components/Navbar'
 import { Navbarlinks } from './Navlinks'
 import { Route,Routes } from 'react-router-dom'
+import Cart from './Pages/Cart'
+import Like from './Pages/Like'
 
 const App = () => {
   return (
@@ -22,6 +24,9 @@ const App = () => {
         <Route path="/kids" element={<Kids />} />
         <Route path="/beauty" element={<Beauty />} />
         <Route path="/fashion" element={<Fashion />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/like" element={<Like />} />
+
       </Routes>
     </div>
   )

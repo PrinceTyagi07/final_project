@@ -77,10 +77,13 @@ const Navbar = ({ Navbarlinks }) => {
                             </button>
                         </div>
                         <div className="">
+                        <NavLink to='/like'>
+
                             <button className="flex flex-col  items-center justify-center text-center ">
                                 <FaRegHeart  className='text-orange-500' />
                             <p className="font-semibold gradient-text text-[1rem] mt-2 hidden md:block">wishlist</p>
                             </button>
+                        </NavLink>
                         </div>
                         <div className="">
                             <button className="flex flex-col  items-center justify-center text-center">
