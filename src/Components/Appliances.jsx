@@ -11,7 +11,7 @@ const Appliances = () => {
       <div key={link.id} className='w-[44%] overflow-hidden' >
 
       <img className='' src={link.Image} alt="no image found"  />
-      <h2>{link.Text}</h2>
+      <h2 className='text-[3vw]'>{link.Text}</h2>
       </div>
     
     ))}
