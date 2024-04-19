@@ -6,11 +6,11 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, FreeMode, Navigation, Pagination } from "swiper/modules";
-import Appliances from './Appliances';
-import Styleformen from './Styleformen';
-import StyleHome from './StyleHome';
-import Homeimprovement from './Homeimprovement';
-import ElectricGadget from './ElectricGadget';
+import Appliances from '../Components/Appliances';
+import Styleformen from '../Components/Styleformen';
+import StyleHome from '../Components/StyleHome';
+import Homeimprovement from '../Components/Homeimprovement';
+import ElectricGadget from '../Components/ElectricGadget';
 
 
 const HomeLiving = () => {
