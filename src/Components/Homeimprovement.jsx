@@ -10,7 +10,7 @@ const Homeimprovement = () => {
   Homeneed.map((link)=>(
          <div key={link.id} className='w-[44%] h-1/3 overflow-hidden' >
    
-         <img className={`h-[13vh]`} src={link.Image} alt="no image found"  />
+         <img className={`h-[11vh] md:[13vh] `} src={link.Image} alt="no image found"  />
          <h2>{link.Text}</h2>
          </div>
        
