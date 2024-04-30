@@ -1,0 +1,40 @@
+{
+ " _id": "1234",
+  "_name ": "Garments",
+  "categories":[
+    {
+      "name": "Outer Garments",
+      "items": [
+        {
+          "name": "Coat",
+          "price": 50,
+          "color": "Black",
+          "size": "XL"
+        },
+        {
+          "name": "Jacket",
+          "price": 40,
+          "color": "Blue",
+          "size": "L"
+        }
+      ]
+    },
+    {
+      "name": "Inner Garments",
+      "items": [
+        {
+          "name": "T-shirt",
+          "price": 15,
+          "color": "White",
+          "size": "M"
+        },
+        {
+          "name": "Underwear",
+          "price": 10,
+          "color": "Black",
+          "size": "S"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+    "_id": "5678",
+    "_name": "Women's Garments",
+    "categories": [
+      {
+        "name": "Outer Garments",
+        "items": [
+          {
+            "name": "Coat 1",
+            "price": 50,
+            "color": "Black",
+            "size": "XL",
+            "image": "https://example.com/coat1_image.jpg"
+          },
+          {
+            "name": "Coat 2",
+            "price": 50,
+            "color": "Red",
+            "size": "L",
+            "image": "https://example.com/coat2_image.jpg"
+          },
+          {
+            "name": "Coat 3",
+            "price": 50,
+            "color": "Blue",
+            "size": "M",
+            "image": "https://example.com/coat3_image.jpg"
+          },
+          {
+            "name": "Coat 4",
+            "price": 50,
+            "color": "Gray",
+            "size": "S",
+            "image": "https://example.com/coat4_image.jpg"
+          }
+         ]
+      },
+      {
+        "name": "Inner Garments",
+        "items": [
+          {
+            "name": "T-shirt 1",
+            "price": 20,
+            "color": "White",
+            "size": "M",
+            "image": "https://example.com/tshirt1_image.jpg"
+          },
+          {
+            "name": "T-shirt 2",
+            "price": 20,
+            "color": "Blue",
+            "size": "S",
+            "image": "https://example.com/tshirt2_image.jpg"
+          },
+          {
+            "name": "T-shirt 3",
+            "price": 20,
+            "color": "Black",
+            "size": "L",
+            "image": "https://example.com/tshirt3_image.jpg"
+          },
+          {
+            "name": "T-shirt 4",
+            "price": 20,
+            "color": "Green",
+            "size": "XL",
+            "image": "https://example.com/tshirt4_image.jpg"
+          }
+        ]
+      }
+    ]
+  }
+  

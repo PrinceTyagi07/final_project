@@ -5,6 +5,8 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, FreeMode, Navigation, Pagination } from "swiper/modules";
+
+
 const Men = ({setChanges}) => {
   const setchange = setChanges;
   function changehandler() {
@@ -37,3 +39,4 @@ const Men = ({setChanges}) => {
 }
 
 export default Men
+
